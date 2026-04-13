@@ -1,0 +1,163 @@
+	<!DOCTYPE html>
+	<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ferdinand Krumhoff</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inconsolata:wght@400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #fff;
+      color: #111;
+      font-family: 'Inconsolata', monospace;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    /* ── HEADER ── */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 2rem 2.5rem;
+    }
+
+    .logo {
+      font-family: 'Archivo Black', sans-serif;
+      font-size: 1.6rem;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      color: #111;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      font-family: 'Inconsolata', monospace;
+      font-size: 13px;
+      text-decoration: none;
+      color: #111;
+      margin-left: 2rem;
+    }
+
+    nav a:hover { text-decoration: underline; }
+
+    /* ── PROJECTS GRID ── */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.5rem;
+      padding: 2rem 2.5rem 4rem;
+    }
+
+    .item img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      background: #eee;
+    }
+
+    .item-placeholder {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background: #f2f2f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #bbb;
+      font-size: 12px;
+    }
+
+    .item-info {
+      margin-top: 0.6rem;
+    }
+
+    .item-name {
+      font-size: 13px;
+    }
+
+    .item-meta {
+      font-size: 12px;
+      color: #888;
+      margin-top: 0.15rem;
+    }
+
+    /* ── CONTACT ── */
+    .contact {
+      padding: 0 2.5rem 3rem;
+      font-size: 13px;
+    }
+
+    .contact a {
+      color: #111;
+    }
+
+    .contact a:hover { text-decoration: underline; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 700px) {
+      .grid { grid-template-columns: 1fr; gap: 2rem; }
+      header { padding: 1.5rem; }
+      .grid { padding: 1.5rem 1.5rem 3rem; }
+      .contact { padding: 0 1.5rem 2.5rem; }
+    }
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="logo" href="#">Ferdinand Krumhoff</a>
+    <nav>
+      <a href="#projects">projects</a>
+      <a href="about.html">about</a>
+    </nav>
+  </header>
+
+  <div class="grid" id="projects">
+
+    <div class="item">
+      <img src="IMG_8627.jpeg" alt="Rainbow Stool" />
+      <div class="item-info">
+        <div class="item-name">Rainbow Stool</div>
+        <div class="item-meta">2025 — Ash, nylon belt — 440 × 350 × 350 mm</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="IMG_2169.jpeg" alt="Hocker 1 — Pine" />
+      <div class="item-info">
+        <div class="item-name">Hocker 1 — Pine</div>
+        <div class="item-meta">2024 — Pinewood — 430 × 310 × 310 mm</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="IMG_3171.jpeg" alt="Hocker 1 — Oak" />
+      <div class="item-info">
+        <div class="item-name">Hocker 1 — Oak</div>
+        <div class="item-meta">2024 — Oak — 430 × 310 × 310 mm</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="IMG_2600.jpeg" alt="For Chris" />
+      <div class="item-info">
+        <div class="item-name">For Chris</div>
+        <div class="item-meta">2025 — Spruce, coffee jute — 420 × 400 × 400 mm</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="contact" id="contact">
+    kontakt: <a href="mailto:ferdinand.krumhoff@gmail.com">ferdinand.krumhoff@gmail.com</a><br>
+    Berlin
+  </div>
+
+</body>
+	</html>
